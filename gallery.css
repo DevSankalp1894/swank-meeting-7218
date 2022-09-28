@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+#top{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding: 5px 10px;
+    background-color: #E6E6E6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+    
+}
+#topGallery{
+    flex: 2;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#moregallery{
+    flex: 1;
+   
+    padding: 10px 0px 7px 10px;
+}
+#topGallery>h2{
+    margin-bottom: 15px;
+    padding: 10px 10px 0px 10px;
+    text-decoration: 3px underline red ;
+}
+#topGallery>img{
+    width: 100%;
+    bottom: 0;
+}
+#moregallery>div{
+    display: flex;
+    padding: 5px 0px 5px 0px;
+    width: 60px;
+    
+    width: 100%;
+    height: 24%;
+   
+}
+#moregallery>div:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+}
+#moregallery img{
+    width: 150px;
+}
+#moregallery>h2{
+    padding: 0px 0px 3px 0px;
+    text-decoration: 3px underline red ;
+}
+#moregallery p{
+    padding: 15px;
+}
+#Entertainment{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#Entertainment>h2{
+    text-decoration: 3px underline red ;
+    padding: 10px;
+}
+#enter{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:1px 300px 0px 30px;
+    color: rgb(62, 51, 51);
+    
+
+}
+#enter img{
+    width: 100%;
+}
+#enter>div{
+    padding: 10px;
+}
+#lifestyle{
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#lifestylecont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px;
+    
+}
+#lifestylecont img{
+    width: 100%;
+    border-radius: 4px;
+}
+#lifestylecont>div{
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(62, 51, 51);
+}
+#lifestyle>h2{
+    padding: 10px 0px 0px 20px;
+    text-decoration: 3px underline red ;
+    cursor: pointer;
+}
+#technology{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#technology>h2{
+    text-decoration: 3px underline red ;
+    padding: 10px;
+    cursor: pointer;
+}
+#technologycont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:1px 300px 0px 30px;
+    color: rgb(62, 51, 51);
+
+}
+#technologycont img{
+    width: 100%;
+}
+
+#technologycont>div{
+    padding: 10px;
+    cursor: pointer;
+}
+#sports{
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#sportscont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px;
+    
+}
+#sportscont img{
+    width: 100%;
+    border-radius: 4px;
+}
+#sportscont>div{
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(62, 51, 51);
+}
+#sports>h2{
+    padding: 10px 0px 0px 20px;
+    text-decoration: 3px underline red ;
+    cursor: pointer;
+}
+#nation{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#nation>h2{
+    text-decoration: 3px underline red ;
+    padding: 10px;
+    cursor: pointer;
+}
+#nationcont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:1px 300px 0px 30px;
+    color: rgb(62, 51, 51);
+
+}
+#nationcont img{
+    width: 100%;
+}
+
+#nationcont>div{
+    padding: 10px;
+    cursor: pointer;
+}
+#sports{
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#world{
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#worldcont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px;
+    
+}
+#worldcont img{
+    width: 100%;
+    border-radius: 4px;
+}
+#worldcont>div{
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(62, 51, 51);
+}
+#world>h2{
+    padding: 10px 0px 0px 20px;
+    text-decoration: 3px underline red ;
+    cursor: pointer;
+}
+
+#business{
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#business>h2{
+    text-decoration: 3px underline red ;
+    padding: 10px;
+    cursor: pointer;
+}
+#businesscont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding:1px 300px 0px 30px;
+    color: rgb(62, 51, 51);
+
+}
+#businesscont img{
+    width: 100%;
+}
+
+#businesscont>div{
+    padding: 10px;
+    cursor: pointer;
+}
+#science{
+    width: 85%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#sciencecont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px;
+    
+}
+#sciencecont img{
+    width: 100%;
+    border-radius: 4px;
+}
+#sciencecont>div{
+    padding: 20px;
+    cursor: pointer;
+    color: rgb(62, 51, 51);
+}
+#science>h2{
+    padding: 10px 0px 0px 20px;
+    text-decoration: 3px underline red ;
+    cursor: pointer;
+}
+#footer{
+    height: 140px;
+    background-color: #E6E6E6;
+}
+#footer>div:nth-child(1){
+    display: flex;
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#footer input{
+    width: 85%;
+    height: 85%;
+}
+#footer button{
+    width: 15%;
+    height: 85%;
+    cursor: pointer;
+}
+#buttons{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px 30px;
+    justify-content: space-around;
+    color: rgb(74, 73, 73);
+
+}
+#buttons>h3:hover{
+    color: black;
+    cursor: pointer;
+    
+}
+
+
+
