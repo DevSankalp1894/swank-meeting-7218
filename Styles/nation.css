@@ -43,6 +43,7 @@ body{
 #left>.left_div{
     border: 1px solid gainsboro;
     margin-bottom:10px;
+    cursor: pointer;
 
 }
 #left>.left_div>img{
@@ -60,6 +61,7 @@ body{
     font-size: 1.2em;
     margin-bottom: 7px;
     border-bottom: 1px solid gainsboro;
+    cursor: pointer;
 }
 #middle>.middle_div>img{
     width: 40%;
@@ -80,6 +82,7 @@ body{
     font-size: 1.2em;
     margin: 10px;
     border-bottom: 1px solid gainsboro;
+    cursor: pointer;
 }
 #right_inner>.right_div>img{
     width: 30%;
@@ -103,6 +106,7 @@ body{
 }
 #mid_page>div{
     padding: 10px;
+    cursor: pointer;
 }
 #mid_page>div:nth-child(1)>img{
     width: 100%;
@@ -136,6 +140,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 #d1_inner>.d1_div>img{
     width: 100%;
@@ -148,6 +153,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #d2{
     margin-top: 10px;
@@ -159,6 +165,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 #d2_inner>.d2_div>img{
     width: 100%;
@@ -171,6 +178,7 @@ body{
     font-size: 1em;
     padding: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #d2_outer>.d2_div{
     display: flex;
@@ -191,6 +199,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 #d3_inner>.d1_div>img{
     width: 100%;
@@ -203,6 +212,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #d4{
     margin-top: 10px;
@@ -214,6 +224,7 @@ body{
     font-size: 1.2em;
     padding: 20px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 #d4_inner>.d2_div>img{
     width: 100%;
@@ -226,6 +237,7 @@ body{
     font-size: 1em;
     padding: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 #d4_outer>.d2_div{
     display: flex;
