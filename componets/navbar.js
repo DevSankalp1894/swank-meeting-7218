@@ -1,7 +1,5 @@
-
-  function navbar() {
-
-    return `   <div id="container">
+function navbar() {
+  return `   <div id="containers">
     <div id="section1">
        <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAXVBMVEUAAAD///9QUFBtbW2Ghobc3NxCQkKSkpLj4+NeXl55eXn5+fk3NzfJycnw8PCtra08PDxvb28VFRW0tLSlpaXp6elGRkYuLi7V1dUkJCQJCQlmZmaIiIjCwsIfHx/xuc+8AAAB/ElEQVR4nO3dWW7CQBBF0S5GgzHzDGH/y0yTCCX/6NWTzD07uLJBuCiaUgAAAAAAAAAAAAAAAAAAAPzWg2zrzLxpEw7NNKlvZsn7NcsInBsDI+b6QOcVfNJfxdZc2KoDp+bACPXbjedd9L9GXOjuq7SBE3deNZEWDtx51YBCCim0o5BCCv0ofM/anVeJBzbuvFB/8i5jd1+MxYUjd2CMxIVlaQ5cqgPtT4jap8MfQ2vgUB9YyuJg6zssMgKrYeeYKbZdygUEAAAAAAC9stgMs22yZjTVdudZ/Wp325xA59hbPvB+2hsDI/b6QO96acaCqTlQ/uWa+R59Ut+nvon+y0Fc6O4L9W16dOdVR2lh/3cxKMxAIYUU+lFI4acXntx51Ula2P9P3uXs7ouzuHDjDoyNuND+A0T1zw9LuZgLL/LCsrAGpgy+r52tr7tmBFaTVZM/12+bVcJ+MAAAAAAA6JnbfZTtfsvLm7hGUV3SoMa5+JWwmljKlzEw4ksf6D44UX5K68McGKHehF65A2MlLnQfX6o/+sPdF2xfvqv/uxgUZqCQQgr9KKTw0wvdG1FP4q0od17Ity99+1AvnbjQ/0LUvgyLf4VWvUBb3E/58r8oqR7OE0yXj4RC5zRKPYX6M+3G+bqsP7QCAAAAAAAAAAAAAAAAAAAAAADot28rYDdr/QNwOwAAAABJRU5ErkJggg==" alt=""></a>
        <a href=""><p>e-Paper</p></a>
@@ -52,7 +50,7 @@
     </ul>
         </li>
     </div>
-</div>`
-  }
+</div>`;
+}
 
-    export default navbar;
+export default navbar;

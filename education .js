@@ -1,10 +1,16 @@
+import navbar from "./componets/navbar.js";
+
+let nav = document.getElementById("navbar");
+
+nav.innerHTML = navbar();
+
 ////////// left side main news div//////////////////////////
 
 let API = `0eeea394cac14b7c973aa0f07264993a`;
 async function newsApi() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=jobs&from=2022-08-28&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=jobs&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -45,7 +51,7 @@ const append = async (data) => {
 async function mostPopular() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=popular&from=2022-08-28&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=popular&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -84,7 +90,7 @@ const mostPopular_append = async (data) => {
 async function moreJobs() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=education&from=2022-08-28&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=education&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -122,7 +128,7 @@ const moreJobs_append = async (data) => {
 async function worldGallery() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=gallery&from=2022-08-28&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=gallery&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
