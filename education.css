@@ -5,7 +5,7 @@
     width: 60%;
 } */
 body {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
@@ -14,7 +14,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
     text-decoration: underline;
     text-decoration-color: red;
-    margin-left: 50px;
+    margin-left: 90px;
 
 }
 
@@ -22,7 +22,8 @@ h1 {
 #container {
     display: flex;
     justify-content: space-evenly;
-
+    width: 90%;
+    margin: auto;
 
 }
 
@@ -44,6 +45,10 @@ h1 {
 
 }
 
+#container1 h3:hover {
+    color: blue
+}
+
 /* first top right */
 
 
@@ -54,6 +59,10 @@ h1 {
     width: 30%;
 
     border-radius: 5px;
+}
+
+#container2 h4:hover {
+    color: blue
 }
 
 /* #container2>div {
@@ -79,6 +88,11 @@ h1 {
     margin-left: 5px;
     font-size: 22px;
     color: blue
+}
+
+.container2_Scrollbar>h2:hover {
+    color: red;
+    cursor: pointer;
 }
 
 #container2_content {

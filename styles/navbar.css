@@ -123,6 +123,12 @@ a {
    align-items: center; */
 }
 
+.flex>a:hover {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
 
 
 .flex ul li a {
