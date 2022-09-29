@@ -210,6 +210,11 @@ let drop_4_4=[
 ]
 
 import { appendLeft,appendCenter,appendRight,appendD1,appendD1_1,appendD2,appendD2_2,appendD3,appendD3_3,appendD4,appendD4_4 } from "./append_nation.js";
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();
 
 const left_show=()=>{
     let container=document.getElementById("left");
@@ -268,8 +273,3 @@ const d4_4_show=()=>{
 d4_4_show()
 
  
-import navbar from './componets/navbar.js';
-
-let nav=document.getElementById('navbar');
-
-nav.innerHTML=navbar();

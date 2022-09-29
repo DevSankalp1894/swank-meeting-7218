@@ -234,6 +234,11 @@ let drop_5_5=[
 ]
 
 import {appendLeft,appendCenter,appendRight,appendD1,appendD1_1,appendD2,appendD2_2,appendD3,appendD3_3,appendD4,appendD4_4,appendD5,appendD5_5} from "./append_south.js";
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();
 
 const left_show=()=>{
     let container=document.getElementById("left");
