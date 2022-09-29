@@ -613,3 +613,10 @@ function renderDOMtravelbottom(data){
 }
 
 renderDOMtravelbottom(arr_travelBottom)
+
+
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();
