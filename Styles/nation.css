@@ -13,33 +13,37 @@ body{
 #page_start{
     display: flex;
     gap:0.2%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #page_start>img{
-    width: 30px;
+    width: 15px;
 }
 .spanTitle{
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 0;
-    border-bottom: 5px solid red;
-    line-height: 1.4em;
+    border-bottom: 3px solid red;
+    line-height: 1.8em;
 }
 #top_headline{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap:1%;
 }
+/*
 #top_headline>div{
-    /* border: 1px solid green; */
+     border: 1px solid green;
 }
+*/
 #left_middle_inner{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 2%;
 }
+/*
 #left_middle_inner>div{
-    /* border: 1px solid blueviolet; */
+     border: 1px solid blueviolet; 
 }
+*/
 #left>.left_div{
     border: 1px solid gainsboro;
     margin-bottom:10px;
@@ -52,13 +56,13 @@ body{
 }
 #left>.left_div>p{
     padding-top: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
     color: gray;
 }
 #middle>.middle_div{
     display: flex;
     gap: 3%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 7px;
     border-bottom: 1px solid gainsboro;
     cursor: pointer;
@@ -79,7 +83,7 @@ body{
 #right_inner>.right_div{
     display: flex;
     gap: 3%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px;
     border-bottom: 1px solid gainsboro;
     cursor: pointer;
@@ -118,7 +122,7 @@ body{
 #mid_page>div:nth-child(2)>div{
     display: flex;
     gap: 3%;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 10px;
     border-bottom: 1px solid gainsboro;
 }
@@ -135,11 +139,11 @@ body{
 }
 #d1_inner{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     cursor: pointer;
 }
 #d1_inner>.d1_div>img{
@@ -148,9 +152,9 @@ body{
 }
 #d1_outer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -162,7 +166,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
     margin-bottom: 40px;
     cursor: pointer;
@@ -194,11 +198,11 @@ body{
 }
 #d3_inner{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     cursor: pointer;
 }
 #d3_inner>.d1_div>img{
@@ -207,9 +211,9 @@ body{
 }
 #d3_outer{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(5,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -221,7 +225,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2%;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 20px;
     margin-bottom: 40px;
     cursor: pointer;
@@ -248,5 +252,29 @@ body{
     height: 100px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
+#d5{
+    margin-top: 10px;
+}
+#d5_inner{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    font-size: 1em;
+    padding: 20px;
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+}
+#d5_inner>.d1_div>img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#d5_outer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2%;
+    font-size: 1em;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 
