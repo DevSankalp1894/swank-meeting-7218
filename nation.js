@@ -246,7 +246,6 @@ const d2_2_show=()=>{
     appendD2_2(drop_2_2,container)
 }
 d2_2_show()
-
 const d3_show=()=>{
     let container=document.getElementById("d3_inner");
     appendD3(drop_3,container)
