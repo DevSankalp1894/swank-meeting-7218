@@ -6,7 +6,7 @@ nav.innerHTML = navbar();
 
 ////////// left side main news div//////////////////////////
 
-let API = `0eeea394cac14b7c973aa0f07264993a`;
+let API = `2e5d4752cefc436398c511131e6adda1`;
 async function newsApi() {
   try {
     let res = await fetch(
@@ -31,12 +31,23 @@ const append = async (data) => {
     let div_text = document.createElement("div");
     let img = document.createElement("img");
     img.src = e.urlToImage;
+    img.style.cursor = "pointer";
 
-    img.addEventListener("click", () => {
-      detail_gif(e.id);
-    });
     let title = document.createElement("h3");
     title.innerText = e.title;
+    title.style.cursor = "pointer";
+    title.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    img.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
     let description = document.createElement("p");
     description.innerText = e.description;
     let date = document.createElement("p");
@@ -72,13 +83,23 @@ const mostPopular_append = async (data) => {
     let div_text = document.createElement("div");
     let img = document.createElement("img");
     img.src = e.urlToImage;
+    img.style.cursor = "pointer";
 
-    img.addEventListener("click", () => {
-      detail_gif(e.id);
-    });
     let title = document.createElement("h4");
     title.innerText = e.title;
-
+    title.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    img.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    title.style.cursor = "pointer";
     div_text.append(title);
     div.append(div_text, img);
     gifdata.append(div);
@@ -110,13 +131,23 @@ const moreJobs_append = async (data) => {
     let div_text = document.createElement("div");
     let img = document.createElement("img");
     img.src = e.urlToImage;
+    img.style.cursor = "pointer";
 
-    img.addEventListener("click", () => {
-      detail_gif(e.id);
-    });
     let title = document.createElement("h4");
     title.innerText = e.title;
-
+    title.style.cursor = "pointer";
+    title.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    img.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
     div_text.append(title);
     div.append(div_text, img);
     gifdata.append(div);
@@ -147,13 +178,23 @@ const worldGallery_append = async (data) => {
 
     let img = document.createElement("img");
     img.src = e.urlToImage;
+    img.style.cursor = "pointer";
 
-    img.addEventListener("click", () => {
-      detail_gif(e.id);
-    });
     let title = document.createElement("h4");
     title.innerText = e.title;
-
+    title.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    img.addEventListener("click", () => {
+      let data = [];
+      data.push(e);
+      window.location.href = "detail.html";
+      localStorage.setItem("Details", JSON.stringify(data));
+    });
+    title.style.cursor = "pointer";
     div.append(img, title);
     gifdata.append(div);
   });
