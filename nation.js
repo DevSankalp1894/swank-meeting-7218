@@ -266,3 +266,10 @@ const d4_4_show=()=>{
     appendD4_4(drop_4_4,container)
 }
 d4_4_show()
+
+ 
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();
