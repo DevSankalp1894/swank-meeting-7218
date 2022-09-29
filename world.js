@@ -102,7 +102,7 @@ let appendMiddle = (data) => {
 
 let popularNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=trending&apiKey=d39443aca3534ef3a8ee7ad62a6a7660`;
+    let url = `https://newsapi.org/v2/everything?q=trending&apiKey=493fc75293174974ac640d607862a8f4`;
 
     let res = await fetch(url);
 
@@ -125,7 +125,7 @@ let appendPopular = (data) => {
 
     data.map((el,i) => {
 
-        if(i<22) {
+        if(i<24) {
 
         
             let div = document.createElement('div');
@@ -147,7 +147,7 @@ let appendPopular = (data) => {
 
 let asiaNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=asia&apiKey=d39443aca3534ef3a8ee7ad62a6a7660`;
+    let url = `https://newsapi.org/v2/everything?q=asia&apiKey=8310b5752c8c4c30b984ed3c77811b9d`;
 
     let res = await fetch(url);
 
@@ -163,7 +163,6 @@ asiaNews();
 
 
 let appendAsia = (data) => {
-     console.log(data); 
 
      let asia = document.getElementById('asia');
      asia.innerHTML = null;
@@ -185,9 +184,138 @@ let appendAsia = (data) => {
         asia.append(div);
 
         }
-
      })
-     
+}
 
+
+
+let americaNews = async () => {
+
+    let url=`https://newsapi.org/v2/everything?q=america&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`;
+
+    let res = await fetch(url);
+
+    let data = await res.json();
+
+    let newdata = data.articles;
+
+    appendAmerica(newdata)
+
+
+}
+
+americaNews();
+
+
+let appendAmerica = (data) => {
+    console.log(data);
+
+    let america = document.getElementById('america');
+    america.innerHTML = null;
+
+    data.map((el,i) => {
+
+        if(i<4) {
+
+            let div = document.createElement('div');
+
+            let img = document.createElement('img');
+            img.src = el.urlToImage;
+    
+            let title = document.createElement('p');
+            title.innerText = el.title;
+    
+            div.append(img, title);
+
+            america.append(div);
+
+        }
+
+    })
+}
+
+
+let ausNews = async () => {
+
+    
+    let url=`https://newsapi.org/v2/everything?q=australia&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`;
+
+    let res = await fetch(url);
+
+    let data = await res.json();
+
+    appendAus(data.articles)
+
+}
+
+ausNews();
+
+
+let appendAus = (data) => {
+
+    let aus = document.getElementById('aus');
+    aus.innerHTML = null;
+
+    data.map((el,i) => {
+
+        if(i<6) {
+
+            let div = document.createElement('div');
+
+            let img = document.createElement('img');
+            img.src = el.urlToImage;
+    
+            let title = document.createElement('p');
+            title.innerText = el.title;
+    
+            div.append(img, title);
+
+            aus.append(div);
+
+        }
+
+    })
+}
+
+
+let eastNews = async () => {
+
+    let url=`https://newsapi.org/v2/everything?q=australia&apiKey=8310b5752c8c4c30b984ed3c77811b9d`;
+
+    let res = await fetch(url);
+
+    let data = await res.json();
+
+    appendEast(data.articles)
+
+}
+
+eastNews();
+
+
+let appendEast = (data) => {
+
+    let east = document.getElementById('mid-east');
+    east.innerHTML = null;
+
+    data.map((el,i) => {
+
+        if(i<3) {
+
+            let div = document.createElement('div');
+
+            let img = document.createElement('img');
+            img.src = el.urlToImage;
+    
+            let title = document.createElement('p');
+            title.innerText = el.title;
+    
+            div.append(img, title);
+
+            east.append(div);
+
+        }
+
+    })
 
 }
