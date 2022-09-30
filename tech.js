@@ -2,9 +2,11 @@
 
 
 
+
+
 let entertain = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=entertainment&apiKey=309f6236b88c45899dc51d7af64c023a`;
+    let url = `https://newsapi.org/v2/everything?q=technology&apiKey=2957328f0c6947efa41e73e2f9058927`;
 
     let res = await fetch(url);
 
@@ -49,7 +51,7 @@ let appendEntertain = (data) => {
 
 let bollywood = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=bollywood&apiKey=493fc75293174974ac640d607862a8f4`;
+    let url = `https://newsapi.org/v2/everything?q=tech&apiKey=493fc75293174974ac640d607862a8f4`;
 
     let res = await fetch(url);
 
@@ -92,7 +94,7 @@ let appendBollywood = (data) => {
 
 let movieNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=movies&apiKey=8310b5752c8c4c30b984ed3c77811b9d`;
+    let url = `https://newsapi.org/v2/everything?q=mobiles&apiKey=8310b5752c8c4c30b984ed3c77811b9d`;
 
     let res = await fetch(url);
 
@@ -135,7 +137,7 @@ let appendMovie = (data) => {
 
 let bollyNews = async () => {
 
-    let url=`https://newsapi.org/v2/everything?q=bollywood&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`;
+    let url=`https://newsapi.org/v2/everything?q=smartphones&apiKey=2957328f0c6947efa41e73e2f9058927`;
 
     let res = await fetch(url);
 
@@ -176,7 +178,7 @@ let appendbolly = (data) => {
 
 let hollyNews = async () => {
 
-    let url=`https://newsapi.org/v2/everything?q=hollywood&apiKey=2f58e9bcb00342cb8cfbf66eca44ad59`
+    let url=`https://newsapi.org/v2/everything?q=gadgets&apiKey=8310b5752c8c4c30b984ed3c77811b9d`
 
     let res = await fetch(url);
 
@@ -216,7 +218,7 @@ let appendholly = (data) => {
 
 let teleNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=television&apiKey=493fc75293174974ac640d607862a8f4`;
+    let url = `https://newsapi.org/v2/everything?q=digital&apiKey=493fc75293174974ac640d607862a8f4`;
 
     let res = await fetch(url);
 
@@ -256,7 +258,7 @@ let appendTele = (data) => {
 
 let musicNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=music&apiKey=493fc75293174974ac640d607862a8f4`;
+    let url = `https://newsapi.org/v2/everything?q=science&apiKey=493fc75293174974ac640d607862a8f4`;
 
     let res = await fetch(url);
 
@@ -294,9 +296,3 @@ let appendMusic = (data) => {
     })
 
 }
-
-import navbar from './componets/navbar.js';
-
-let nav=document.getElementById('navbar');
-
-nav.innerHTML=navbar();

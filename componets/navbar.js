@@ -28,7 +28,7 @@ function navbar() {
     <a href="./nation.html"><p>Nation</p></a>
     <a href="./south.html"><p>South</p></a>
     <a href="./world.html"><p>World</p></a>
-    <a href=""><p>Entertainment</p></a>
+    <a href="entertain.html"><p>Entertainment</p></a>
     <a href="./education.html"><p>Jobs & Education</p></a>
     <a href="./sports.html"><p>Sports</p></a>
     <a href="./technology.html"><p>Technology</p></a>
