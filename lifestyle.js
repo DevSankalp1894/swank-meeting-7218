@@ -615,7 +615,6 @@ function renderDOMtravelbottom(data){
 renderDOMtravelbottom(arr_travelBottom)
 
 
-
 let arr_viral=[
     {
         image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-lpe4glih4va5b0c72g09etn400-20220720105232.jpeg",
@@ -717,3 +716,4 @@ function renderFocus(data){
     })
 }
 renderFocus(arr_focusBottom)
+

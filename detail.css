@@ -1,0 +1,95 @@
+body {
+
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: red;
+    margin-left: 20px;
+
+}
+
+/*   first top left */
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+
+
+#left_con {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    width: 65%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid blue; */
+}
+
+#right_con {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid blue; */
+}
+
+#left_con img {
+    width: 100%;
+}
+
+/* Most popular */
+
+#right_con {
+    /* border: 1px solid red; */
+    /* margin-top: 200px; */
+    float: left;
+    overflow-y: auto;
+    height: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#right_con>h2 {
+    text-decoration: underline;
+    text-decoration-color: red;
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 22px;
+    color: blue
+}
+
+#right_con_div {
+    /* width: 30%; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+#right_con_div>div img {
+    width: 100%;
+
+}
+
+#right_con_div h4:hover {
+    color: blue
+}
