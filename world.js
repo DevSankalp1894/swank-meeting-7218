@@ -4,7 +4,8 @@
 
 let worldNews = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=world&apiKey=309f6236b88c45899dc51d7af64c023a`;
+    let url = `https://newsapi.org/v2/everything?q=world&apiKey=f2dc9de1c0fa42c2a75ae5ac03a6bfd5
+    `;
 
     let res = await fetch(url);
 

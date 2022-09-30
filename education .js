@@ -6,12 +6,16 @@ nav.innerHTML = navbar();
 
 ////////// left side main news div//////////////////////////
 
-let API = `b94688bd25144c1096fe91304cb787e2`;
+let API = "dcd4020693f1415eabe0cdc3907fc499";
+
+
+
+
 async function newsApi() {
   try {
-    let res = await fetch(
-      `https://newsapi.org/v2/everything?q=jobs&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
-    );
+    let res = await fetch( `https://newsapi.org/v2/everything?q=jobs&apiKey=${API}`);
+     
+   
 
     let data = await res.json();
     console.log(data.articles);
@@ -25,7 +29,8 @@ newsApi();
 const append = async (data) => {
   let gifdata = document.querySelector("#container1");
 
-  data.forEach((e) => {
+  data.forEach((e,i) => {
+    if(i<25){
     let div = document.createElement("div");
     div.setAttribute("class", "news_div");
     let div_text = document.createElement("div");
@@ -55,14 +60,16 @@ const append = async (data) => {
     div_text.append(title, description, date);
     div.append(img, div_text);
     gifdata.append(div);
+  }
   });
+
 };
 
 ////////// Right side MOST POPULAR div//////////////////////////
 async function mostPopular() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=popular&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=popular&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -111,7 +118,7 @@ const mostPopular_append = async (data) => {
 async function moreJobs() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=education&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=education&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -159,7 +166,7 @@ const moreJobs_append = async (data) => {
 async function worldGallery() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=gallery&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=gallery&apiKey=${API}`
     );
 
     let data = await res.json();

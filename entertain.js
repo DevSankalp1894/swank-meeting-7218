@@ -4,7 +4,8 @@
 
 let entertain = async () => {
 
-    let url = `https://newsapi.org/v2/everything?q=entertainment&apiKey=309f6236b88c45899dc51d7af64c023a`;
+    let url = `https://newsapi.org/v2/everything?q=entertainment&apiKey=7fdc47b90ca44741881fc18f47323cec`;
+    
 
     let res = await fetch(url);
 
@@ -39,6 +40,19 @@ let appendEntertain = (data) => {
             desc.innerText = el.description;
 
             div.append(img,title,desc);
+
+            div.addEventListener("click", () => {
+                let data = [];
+                data.push(el);
+                window.location.href = "detail.html";
+                localStorage.setItem("Details", JSON.stringify(data));
+              });
+            //   img.addEventListener("click", () => {
+            //     let data = [];
+            //     data.push(el);
+            //     window.location.href = "detail.html";
+            //     localStorage.setItem("Details", JSON.stringify(data));
+            //   });
 
             child_1.append(div)
 
@@ -84,6 +98,13 @@ let appendBollywood = (data) => {
 
             div.append(img,title);
 
+            div.addEventListener("click", () => {
+                let data = [];
+                data.push(el);
+                window.location.href = "detail.html";
+                localStorage.setItem("Details", JSON.stringify(data));
+              });
+
             child_2.append(div)
         }
     })
@@ -124,6 +145,13 @@ let appendMovie = (data) => {
             title.innerText = el.title;
 
             div.append(title,img);
+
+            div.addEventListener("click", () => {
+                let data = [];
+                data.push(el);
+                window.location.href = "detail.html";
+                localStorage.setItem("Details", JSON.stringify(data));
+              });
 
             box_3.append(div);
 
@@ -166,6 +194,13 @@ let appendbolly = (data) => {
             title.innerText = el.title;
 
             div.append(img, title);
+
+            div.addEventListener("click", () => {
+                let data = [];
+                data.push(el);
+                window.location.href = "detail.html";
+                localStorage.setItem("Details", JSON.stringify(data));
+              });
 
             bolly.append(div);
 

@@ -25,7 +25,8 @@ newsApi();
 const append = async (data) => {
   let gifdata = document.querySelector("#container1");
 
-  data.forEach((e) => {
+  data.forEach((e,i) => {
+    if(i<20){
     let div = document.createElement("div");
     div.setAttribute("class", "news_div");
     let div_text = document.createElement("div");
@@ -55,6 +56,7 @@ const append = async (data) => {
     div_text.append(title, description, date);
     div.append(img, div_text);
     gifdata.append(div);
+  }
   });
 };
 

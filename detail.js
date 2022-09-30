@@ -32,11 +32,11 @@ const append = (data) => {
 append(data);
 
 ////////// Right side MOST POPULAR div//////////////////////////
-let API = `d01b979c685d4ea289a3400c3441a84b`;
+let API = `dcd4020693f1415eabe0cdc3907fc499`;
 async function mostPopular() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=athletes&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=athletes&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -85,7 +85,7 @@ const mostPopular_append = async (data) => {
 async function below_details() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=hollywood&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=hollywood&apiKey=${API}`
     );
 
     let data = await res.json();
