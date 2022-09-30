@@ -5,10 +5,11 @@
     font-family: sans-serif;
     color: #383838;
 }
-body{
+#below_body{
     width: 85%;
     /* border: 1px solid black; */
-    margin:auto
+    margin:auto;
+    margin-top: 20px;
 }
 #page_start{
     display: flex;
@@ -276,4 +277,39 @@ body{
     margin-bottom: 20px;
     cursor: pointer;
 }
+#footer{
+    height: 140px;
+    background-color: #E6E6E6;
+}
+#footer>div:nth-child(1){
+    display: flex;
+    width: 50%;
+    margin: auto;
+    height: 60px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+#footer input{
+    width: 85%;
+    height: 85%;
+}
+#footer button{
+    width: 15%;
+    height: 85%;
+    cursor: pointer;
+}
+#buttons{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    font-size: 10px;
+    padding: 5px 30px;
+    justify-content: space-around;
+    color: rgb(74, 73, 73);
 
+}
+#buttons>h3:hover{
+    color: black;
+    cursor: pointer;
+    
+}

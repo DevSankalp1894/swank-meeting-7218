@@ -408,3 +408,9 @@ function renderDOMscience(data){
 
 }
 renderDOMscience(arr_science);
+
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();

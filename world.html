@@ -5,146 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        .parent{
-            width: 85%;
-            margin: auto;
-            display: flex;
-            gap: 20px;
-        }
-
-        .parent>div{
-            /* margin: auto; */
-            height: fit-content
-        }
-
-        #child-1{
-            width: fit-content;
-        }
-
-        #child-1 div{
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-            margin-bottom: 10px;
-            padding-bottom: 2px;
-            cursor: pointer;
-        }
-
-        #child-1 div h2,p{
-            margin-left: 10px;
-        }
-
-        #child-2{
-            width: 300px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-
-            margin-top: 70px;
-        }
-
-        #child-2>div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            padding: 0px 5px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            font-family: sans-serif;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        #child-2>div img{
-            width: 130px;
-            height: 80px;
-        }
-
-        #child-3{
-            width: 390px;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-            background-color: #f8f8f8;
-        }
-
-        #child-3 div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-            padding: 0px 20px 0px 0px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-            font-weight: bold;
-            font-family: sans-serif;
-            font-size: 15px;
-            cursor: pointer;
-        }
-
-        #child-3 div img{
-            width: 120px;
-        }
-
-    
-        #one{
-            width: 35%;
-        }
-
-        #one>h2{
-            width: fit-content;
-            border-bottom: 3px solid red;
-        }
-
-        #last{
-            background-color: #f8f8f8;
-            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-        }
-
-        #last>h2{
-            width: fit-content;
-            text-transform: uppercase;
-            border-bottom: 3px solid red;
-            margin-left: 30px;
-        }
-
-        #asia{
-            margin: auto;
-            /* margin-top: 50px; */
-            width: 80%;
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 10px;
-        }
-
-        #asia div{
-            width: 250px;
-            font-weight: bold;
-            font-family: sans-serif;
-        }
-
-        #asia div img{
-            width: 100%;
-            height: 150px;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        }
-
-        #asia-head{
-            margin-top: 50px;
-            margin-left: 100px;
-            width: fit-content;
-            text-transform: uppercase;
-            border-bottom: 3px solid red;
-        }
-
-      
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
 </head>
 <body>
+      <div id="navbar"></div>
 
     <div class="parent">
 
         <div id="one">
-            <h2>WORLD</h2>
-        <div id="child-1">
-
-        </div>
+            <h2>world</h2>
+        <div id="child-1"></div>
     </div>
 
         <div id="child-2"></div>
@@ -152,19 +23,39 @@
         <div id="last">
             <h2>most popular</h2>
         <div id="child-3">
-
         </div>
     </div>
     </div>
+        
 
+    <div id="line"></div>
+     
     
         <h2 id="asia-head">asia</h2>
 
-    <div id="asia"></div>
+        <div id="asia"></div>
+
+        <div id="line"></div>
+
+        <h2 id="asia-head">america</h2>
+
+        <div id="america"></div>
+
+        <div id="line"></div>
+
+        <h2 id="asia-head">australia</h2>
+
+        <div id="aus"></div>
+
+        <div id="line"></div>
+
+        <h2 id="asia-head">middle east</h2>
+
+        <div id="mid-east"></div>
 
     
 </body>
 </html>
 
 
-<script src="world.js"></script>
+<script type="module" src="world.js"></script>
