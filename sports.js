@@ -6,11 +6,11 @@ nav.innerHTML = navbar();
 
 ////////// left side main news div//////////////////////////
 
-let API = `b94688bd25144c1096fe91304cb787e2`;
+let API = `d01b979c685d4ea289a3400c3441a84b`;
 async function newsApi() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=jobs&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=sports&from=2022-08-30&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -62,7 +62,7 @@ const append = async (data) => {
 async function mostPopular() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=popular&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=popular&from=2022-08-30&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -111,7 +111,7 @@ const mostPopular_append = async (data) => {
 async function moreJobs() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=education&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=education&from=2022-08-30&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -159,7 +159,7 @@ const moreJobs_append = async (data) => {
 async function worldGallery() {
   try {
     let res = await fetch(
-      `https://newsapi.org/v2/everything?q=gallery&from=2022-08-29&sortBy=publishedAt&apiKey=${API}`
+      `https://newsapi.org/v2/everything?q=gallery&from=2022-08-30&sortBy=publishedAt&apiKey=${API}`
     );
 
     let data = await res.json();
@@ -199,3 +199,33 @@ const worldGallery_append = async (data) => {
     gifdata.append(div);
   });
 };
+
+//////////////slide show in the right side ///////////////////////////////
+
+function slideShow() {
+  let slides = [
+    `https://i.pinimg.com/originals/ee/f6/e6/eef6e697143eea117549b343e9069b30.jpg`,
+    `https://i.pinimg.com/originals/0e/81/56/0e8156c62d5db86b2d423323456fc286.jpg`,
+
+    `https://media.istockphoto.com/vectors/soccer-football-web-banner-template-or-background-vector-id892142922?k=6&m=892142922&s=170667a&w=0&h=V5kxjD1STuUFNnd2FWSkbhElvCV6WS-R_FGsBncEVuc=`,
+  ];
+
+  let i = 0;
+  let div = document.querySelector("#corosoul");
+  div.innerHTML = null;
+  let img = document.createElement("img");
+  img.src = img[0];
+  div.append(img);
+  i++;
+  console.log(i);
+  setInterval(function () {
+    if (i == 3) {
+      i = 0;
+    }
+    img.src = slides[i];
+    div.append(img);
+    console.log(i);
+    i++;
+  }, 3000);
+}
+slideShow();
