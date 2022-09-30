@@ -613,3 +613,107 @@ function renderDOMtravelbottom(data){
 }
 
 renderDOMtravelbottom(arr_travelBottom)
+
+
+
+let arr_viral=[
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-lpe4glih4va5b0c72g09etn400-20220720105232.jpeg",
+        para: "Unsocial media"
+    },
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-55opjagf0jejtmare7jdqigs16-20210827171834.jpeg",
+        para: "Chemicals are not all bad"
+    },
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-qo4lkc94037m2ug36rq5r9q8a6-20200816112516.jpeg",
+        para: "Flipkart issues apology over its Women's Day message promoting kitchen appliances"
+    },
+];
+
+
+function renderDOMviral(data){
+    let container=document.getElementById("enterviral");
+    data.forEach((el)=>{
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.src=el.image;
+        let para=document.createElement("h3");
+        para.innerText=el.para;
+
+        div.append(img,para);
+        container.append(div);
+    })
+}
+renderDOMviral(arr_viral);
+
+
+
+let arr_focus=[
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0rperakk9dujacp8r6gu0tsp66-20220910203715.jpeg",
+        para: "Dr Roy's Confident Group Glitters on SlIMA 2022"
+    },
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jsqi3136e8feqj93a77kavaea0-20220909121007.jpeg",
+        para: "Diabetic foot ulcer treatment at Park Endocrinology: aims to avoid"
+    },
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jsqi3136e8feqj93a77kavaea0-20220909115359.jpeg",
+        para: "Coccaa to utilize Make in India initiative to create local opportunities"
+    },
+    {
+        image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jsqi3136e8feqj93a77kavaea0-20220909113325.jpeg",
+        para: "Comedy Culture is all things filmy and entertainment"
+    },
+];
+
+
+function renderDOMfocus(data){
+    let container=document.getElementById("focusfirst");
+    data.forEach((el)=>{
+        let div=document.createElement("div");
+        let img=document.createElement("img");
+        img.src=el.image;
+        let para=document.createElement("h3");
+        para.innerText=el.para;
+
+        div.append(img,para);
+        container.append(div);
+    })
+}
+renderDOMfocus(arr_focus);
+
+
+let arr_focusBottom=[
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8clogihjipbrgohjojhue1piv5-20220823121601.jpeg",
+        para:"CSS Founder: Best Website Design Firm in Bangalore Supporting Digital India Mission"
+    },
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9buc6vcd3vmoujkcl5g67t2bc7-20220802201453.jpeg",
+        para:"Financial Crisis Overcoming Fear and Stress"
+    },
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-coovnp6v3uhohtqn2megd484f4-20220714194152.jpeg",
+        para:"How Instant Feedback is helping newage Retail Businesses"
+    },
+    
+];
+
+
+function renderDOMfocusbottom(data){
+    let container=document.getElementById("focussecond");
+    data.forEach((el)=>{
+        let div=document.createElement("div")
+        let img=document.createElement("img");
+        img.src=el.image;
+        let para=document.createElement("h3");
+        para.innerText=el.para
+
+        div.append(img,para);
+        container.append(div);
+    })
+}
+
+renderDOMfocusbottom(arr_focusBottom)
