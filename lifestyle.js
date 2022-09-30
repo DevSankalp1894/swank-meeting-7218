@@ -684,3 +684,37 @@ function renderfocus(data){
 }
 renderfocus(arr_focus);
 
+
+let arr_focusBottom=[
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8clogihjipbrgohjojhue1piv5-20220823121601.jpeg",
+        para:"CSS Founder: Best Website Design Firm in Bangalore Supporting Digital India Mission"
+    },
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-9buc6vcd3vmoujkcl5g67t2bc7-20220802201453.jpeg",
+        para:"Financial Crisis Overcoming Fear and Stress"
+    },
+    
+    {
+        image:"https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-coovnp6v3uhohtqn2megd484f4-20220714194152.jpeg",
+        para:"How Instant Feedback is helping newage Retail Businesses"
+    },
+    
+];
+
+
+function renderFocus(data){
+    let container=document.getElementById("focussecond");
+    data.forEach((el)=>{
+        let div=document.createElement("div")
+        let img=document.createElement("img");
+        img.src=el.image;
+        let para=document.createElement("h3");
+        para.innerText=el.para
+
+        div.append(img,para);
+        container.append(div);
+    })
+}
+
+renderFocus(arr_focusBottom)
