@@ -716,5 +716,4 @@ function renderFocus(data){
         container.append(div);
     })
 }
-
 renderFocus(arr_focusBottom)
