@@ -28,10 +28,10 @@ function navbar() {
     <a href="./nation.html"><p>Nation</p></a>
     <a href="./south.html"><p>South</p></a>
     <a href="./world.html"><p>World</p></a>
-    <a href=""><p>Entertainment</p></a>
+    <a href="./entertain"><p>Entertainment</p></a>
     <a href="./education.html"><p>Jobs & Education</p></a>
     <a href="./sports.html"><p>Sports</p></a>
-    <a href="./technology.html"><p>Technology</p></a>
+    <a href="./tech.html"><p>Technology</p></a>
     <a href="./lifestyle.html"><p>Lifestyle</p></a>
     <a href="./gallery.html"><p>Gallery</p></a>
     <div id="more">

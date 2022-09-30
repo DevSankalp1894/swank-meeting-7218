@@ -1,4 +1,10 @@
 
+
+import navbar from './componets/navbar.js';
+
+let nav=document.getElementById('navbar');
+
+nav.innerHTML=navbar();
 let arr_lifestyle=[
     {
         image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-rk2iu50kqejb96bo47d7d4jap5-20220929112953.jpeg",
