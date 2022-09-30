@@ -669,7 +669,7 @@ let arr_focus=[
 ];
 
 
-function renderDOMfocus(data){
+function renderfocus(data){
     let container=document.getElementById("focusfirst");
     data.forEach((el)=>{
         let div=document.createElement("div");
@@ -682,7 +682,7 @@ function renderDOMfocus(data){
         container.append(div);
     })
 }
-renderDOMfocus(arr_focus);
+renderfocus(arr_focus);
 
 
 let arr_focusBottom=[
@@ -702,7 +702,7 @@ let arr_focusBottom=[
 ];
 
 
-function renderDOMfocusbottom(data){
+function renderFocus(data){
     let container=document.getElementById("focussecond");
     data.forEach((el)=>{
         let div=document.createElement("div")
@@ -716,4 +716,4 @@ function renderDOMfocusbottom(data){
     })
 }
 
-renderDOMfocusbottom(arr_focusBottom)
+renderFocus(arr_focusBottom)
