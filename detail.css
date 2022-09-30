@@ -48,7 +48,7 @@ h1 {
     /* border: 1px solid blue; */
 }
 
-#left_con img {
+#left_con1 img {
     width: 100%;
 }
 
@@ -91,5 +91,19 @@ h1 {
 }
 
 #right_con_div h4:hover {
+    color: blue
+}
+
+#left_con2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#left_con2 img {
+    width: 100%;
+}
+
+#left_con2 h4:hover {
     color: blue
 }

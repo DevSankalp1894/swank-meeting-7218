@@ -1,0 +1,176 @@
+/* #scrollbar {
+    float: left;
+    overflow-y: auto;
+    height: 800px;
+    width: 60%;
+} */
+body {
+    /* width: 90%; */
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: red;
+    margin-left: 90px;
+
+}
+
+/*   first top left */
+#container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+
+}
+
+
+
+#container1 {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 5px;
+    width: 65%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#container1>div img {
+    width: 30%;
+
+}
+
+#container1 h3:hover {
+    color: blue
+}
+
+/* first top right */
+
+
+
+#container2 {
+
+    /* border: 1px solid blue; */
+    width: 30%;
+
+    border-radius: 5px;
+}
+
+#container2 h4:hover {
+    color: blue
+}
+
+/* #container2>div {
+    margin-top: 300px;
+} */
+
+.container2_Scrollbar {
+    /* border: 1px solid red; */
+    margin-top: 200px;
+    float: left;
+    overflow-y: auto;
+    height: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container2_Scrollbar>h2 {
+    text-decoration: underline;
+    text-decoration-color: red;
+    position: absolute;
+    background-color: white;
+    width: 30%;
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 22px;
+    color: blue
+}
+
+.container2_Scrollbar>h2:hover {
+    color: red;
+    cursor: pointer;
+}
+
+#container2_content {
+    /* width: 30%; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+#container2_content>div img {
+    width: 30%;
+
+}
+
+.news_div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.news_div>div {
+    flex-wrap: wrap;
+    width: 68%;
+}
+
+
+/* right second div more from education*/
+
+#container2_content1 {
+    /* width: 30%; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+
+#container2_content1>div img {
+    width: 30%;
+
+}
+
+
+/* right third div World gallery*/
+
+#container2_content2 {
+    /* width: 30%; */
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 20px;
+}
+
+#container2_content2>div img {
+    width: 100%;
+
+}
+
+#corosoul {
+    width: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+
+
+}
+
+#corosoul img {
+    border-radius: 5px;
+
+}
+
+#corosoul img:hover {
+    cursor: pointer;
+    border-radius: 10px;
+}
