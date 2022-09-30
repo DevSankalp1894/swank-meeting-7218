@@ -665,6 +665,7 @@ let arr_focus=[
         image: "https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-jsqi3136e8feqj93a77kavaea0-20220909113325.jpeg",
         para: "Comedy Culture is all things filmy and entertainment"
     },
+
 ];
 
 
